@@ -20,7 +20,7 @@
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
             <label class="search-form__label">
-              <span class="search-form__label-text visually-hidden">Город</span>
+              <span class="search-form__label-text visually-hidden"></span>
               <input
                 type="text"
                 placeholder="Санкт Петербург, например"
@@ -32,37 +32,19 @@
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Время суток</h2>
             <div class="search-form__checkbox-list">
-              <label class="search-form__label">
-                <input
-                  type="checkbox"
-                  name="time"
-                  value="morning"
-                  class="search-form__checkbox visually-hidden"
-                />
-                <span class="search-form__pseudo-checkbox"></span>
-                <span class="search-form__label-text">Утро</span>
-              </label>
-              <label class="search-form__label">
-                <input
-                  type="checkbox"
-                  name="time"
-                  value="afternoon"
-                  class="search-form__checkbox visually-hidden"
-                />
-                <span class="search-form__pseudo-checkbox"></span>
-                <span class="search-form__label-text">День</span>
-              </label>
-              <label class="search-form__label">
-                <input
-                  type="checkbox"
-                  name="time"
-                  value="night"
-                  class="search-form__checkbox visually-hidden"
-                />
-                <span class="search-form__pseudo-checkbox"></span>
-                <span class="search-form__label-text">Ночь</span>
-              </label>
-            </div>
+            <label class="search-form__label">
+             <input type="checkbox" name="time" value="morning" class="search-form__checkbox visually-hidden" />
+               <span class="search-form__label-text">Утро</span>
+                  </label>
+                  <label class="search-form__label">
+                    <input type="checkbox" name="time" value="afternoon" class="search-form__checkbox visually-hidden" />
+                    <span class="search-form__label-text">День</span>
+                  </label>
+                  <label class="search-form__label">
+                    <input type="checkbox" name="time" value="night" class="search-form__checkbox visually-hidden" />
+                    <span class="search-form__label-text">Ночь</span>
+                  </label>
+                </div>
           </fieldset>
           <button type="submit" class="button search-form__submit-button">
             Найти
@@ -75,13 +57,10 @@
         </h1>
         <div class="content__list-container">
           <ul class="content__list">
-            <!-- ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК -->
           </ul>
         </div>
       </section>
     </main>
-
-    <!-- ТЕМПЛЕЙТЫ -->
 
     <template class="preloader-template">
       <div class="preloader">
@@ -107,6 +86,7 @@
         </a>
       </li>
     </template>
+
     <template class="more-button-template">
       <button class="button more-button">Показать еще</button>
     </template>
@@ -116,6 +96,7 @@
         <h2 class="error__title">Из этого города нет видео :(</h2>
       </div>
     </template>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
