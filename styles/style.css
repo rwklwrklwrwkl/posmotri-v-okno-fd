@@ -40,8 +40,8 @@ ol {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 267px;
-  gap: 29px;
+  padding-bottom: 265px;
+  padding-right: 60px;
 }
 
 .visually-hidden {
@@ -179,9 +179,8 @@ ol {
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 19px 0 0 34px;
@@ -247,7 +246,6 @@ ol {
 .content__card-link:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
-  text-underline-offset: 3px;
 }
 
 .content__card-link:active {
@@ -257,10 +255,6 @@ ol {
 .content__card-link:focus {
   outline: none;
   border: 1px solid #fff;
-}
-
-.content__card-link_current {
-  background-color: #545050;
 }
 
 .content__card-link_current {
