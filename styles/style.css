@@ -80,7 +80,7 @@ ol {
 
 .search-form {
   display: flex;
-  gap: 4px;
+  gap: 2px;
   align-items: flex-start;
 }
 
@@ -180,7 +180,7 @@ ol {
   line-height: 1;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 19px 0 0 30px;
+  margin: 19px 0 0 35px;
 }
 
 .button:hover {
@@ -203,6 +203,7 @@ ol {
   gap: 0px;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 .title {
@@ -211,7 +212,7 @@ ol {
   line-height: 0.95;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0px 0px 24px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .content__accent {
@@ -219,19 +220,59 @@ ol {
 }
 
 .content__list-container {
-  position: relative;
-  max-height: 298px;
+  height: 298px;
   overflow-y: auto;
+  position: relative;
+  margin-top: 24px;
+  background-color: #1b1919;
+  border: 1px solid transparent;
+  scrollbar-width: thin;
 }
 
+
 .content__list {
-  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-top: 0px;
+  gap: 17px;
+}
+
+
+.content__list-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.content__list-container::-webkit-scrollbar-track {
+  background: rgba(217, 217, 217, 0.1);
+}
+
+.content__list-container::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 2px;
+}
+
+.content__list-container {
+  scrollbar-color: #d9d9d9 rgba(217, 217, 217, 0.1);
+  scrollbar-width: thin;
+}
+
+.content__list-item {
+  margin: 2px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:focus {
+  outline: none;
+  border: 1px solid #fff;
 }
 
 .content__card-link {
@@ -312,4 +353,26 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb { 
   background-color: #d9d9d9; 
+}
+
+.error-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(27, 25, 25, 0.9);
+}
+
+.error {
+  text-align: center;
+}
+
+.error__title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 24px;
+  color: #fff;
 }
