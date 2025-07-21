@@ -53,7 +53,7 @@ ol {
   width: 1140px;
   margin: 0 0;
   padding: 0px 0px;
-  gap: 28px;
+  gap: 8px;
 }
 
 .result {
@@ -183,6 +183,10 @@ ol {
   margin: 19px 0 0 35px;
 }
 
+.more-button {
+  width: 92%;
+}
+
 .button:hover {
   text-decoration: underline;
 }
@@ -192,8 +196,8 @@ ol {
 }
 
 .button:focus {
-  outline: 1px solid white;
-  outline-offset: 2px;
+  outline: none;
+  background: #545050;
 }
 
 .content__details {
@@ -212,7 +216,7 @@ ol {
   line-height: 0.95;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 22px;
 }
 
 .content__accent {
@@ -227,20 +231,15 @@ ol {
   background-color: #1b1919;
   border: 1px solid transparent;
   scrollbar-width: thin;
+  scrollbar-color: #d9d9d9 rgba(217, 217, 217, 0.1);
 }
-
 
 .content__list {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 18px;
   display: flex;
   flex-direction: column;
   gap: 17px;
-}
-
-
-.content__list-container::-webkit-scrollbar {
-  width: 4px;
 }
 
 .content__list-container::-webkit-scrollbar-track {
@@ -250,11 +249,6 @@ ol {
 .content__list-container::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
   border-radius: 2px;
-}
-
-.content__list-container {
-  scrollbar-color: #d9d9d9 rgba(217, 217, 217, 0.1);
-  scrollbar-width: thin;
 }
 
 .content__list-item {
@@ -282,20 +276,6 @@ ol {
   margin: 2px;
   border: 1px solid transparent;
   transition: all 0.3s ease;
-}
-
-.content__card-link:hover {
-  text-decoration: underline;
-  text-decoration-color: #fff;
-}
-
-.content__card-link:active {
-  background-color: #545050;
-}
-
-.content__card-link:focus {
-  outline: none;
-  border: 1px solid #fff;
 }
 
 .content__card-link_current {
@@ -353,26 +333,4 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb { 
   background-color: #d9d9d9; 
-}
-
-.error-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(27, 25, 25, 0.9);
-}
-
-.error {
-  text-align: center;
-}
-
-.error__title {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 24px;
-  color: #fff;
 }
